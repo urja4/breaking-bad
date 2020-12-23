@@ -28,7 +28,7 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = (props: Chara
             <div className = 'Character-card'>
                 <Link to = {url}>
                     <Card style={{ width: '20rem', border: '5px solid' }}>
-                        <Card.Img className = 'Character-image' variant="top" src={props.character.img} />
+                        <Card.Img className = 'Character-image' variant="top" src={props.character.img} alt = "" />
                         <Card.Body>
                             <Card.Title className = 'Character-name'>{props.character.name}</Card.Title>
                         </Card.Body>
@@ -50,7 +50,7 @@ interface CharacterCardsSetProps {
 }
 
 const CharacterCardsSet: React.FunctionComponent<CharacterCardsSetProps> = (props: CharacterCardsSetProps) => {
-    if(props.characterList.length == 0) return(<></>);
+    if(props.characterList.length === 0) return(<></>);
 
     return (
         <div className = 'Character-list'>

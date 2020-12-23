@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,18 +25,18 @@ const PaginationBar: React.FunctionComponent<PaginationBarProps> = (props:Pagina
     const fetchPages = () => {
         let pages: number[] = [];
 
-        if(currentPage == 1) {
+        if(currentPage === 1) {
             pages.push(1);
-            if(noOfPages == 1) return pages;
+            if(noOfPages === 1) return pages;
             pages.push(2);
-            if(noOfPages == 2) return pages;
+            if(noOfPages === 2) return pages;
             pages.push(3);
         }
 
         else {
             pages.push(currentPage - 1);
             pages.push(currentPage);
-            if(noOfPages == currentPage) return pages;
+            if(noOfPages === currentPage) return pages;
             pages.push(currentPage + 1);
         }
 
@@ -49,6 +49,7 @@ const PaginationBar: React.FunctionComponent<PaginationBarProps> = (props:Pagina
 
     pages.map((page, index) => {
         pageBlock.push(<Pagination.Item className = 'Page-unit' onClick = {handleClick.bind(this,page)} >{page}</Pagination.Item>)
+        return;
     })
 
     return (

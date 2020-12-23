@@ -9,7 +9,7 @@ import {Character} from './Character-cards';
 const HomePage : React.FunctionComponent = () => {
     const [isFilterApplied, applyFilter] = useState(false);
     const [filterApplied, changeAppliedFilter] = useState(0);
-    const [limitOnOnePage, changeLimit] = useState(10);
+    const limitOnOnePage = 10;
     const [startIndex, updateStartIndex] = useState(0);
     const [characterList, updateCharacterList] = useState<Character[]>([]);
     const [currentPageCharacter, updateCurrentPageCharacter] = useState<Character[]>([]);

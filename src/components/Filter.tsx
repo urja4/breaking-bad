@@ -53,9 +53,9 @@ const Filter: React.FunctionComponent<FilterProps> = (props: FilterProps) => {
             <Modal.Title className = 'Title'>Filter</Modal.Title>
           </Modal.Header>
           <Modal.Body className = 'Body'>
-                <Button className = 'Option' style = {{backgroundColor: (selected == 1)? '#6b5e62': '#c9f0ff', color: (selected == 1)? 'white': 'black'}} onClick= {handleClick.bind(this,1)} >Breaking Bad</Button>
-                <Button className = 'Option' style = {{backgroundColor: (selected == 2)? '#6b5e62': '#c9f0ff', color: (selected == 1)? 'white': 'black'}} onClick = {handleClick.bind(this,2)} >Better Call Saul</Button>
-                <Button className = 'Option' style = {{backgroundColor: (selected == 0)? '#6b5e62': '#c9f0ff', color: (selected == 1)? 'white': 'black'}} onClick = {handleClick.bind(this,0)} >None</Button>
+                <Button className = 'Option' style = {{backgroundColor: (selected === 1)? '#6b5e62': '#c9f0ff', color: (selected === 1)? 'white': 'black'}} onClick= {handleClick.bind(this,1)} >Breaking Bad</Button>
+                <Button className = 'Option' style = {{backgroundColor: (selected === 2)? '#6b5e62': '#c9f0ff', color: (selected === 1)? 'white': 'black'}} onClick = {handleClick.bind(this,2)} >Better Call Saul</Button>
+                <Button className = 'Option' style = {{backgroundColor: (selected === 0)? '#6b5e62': '#c9f0ff', color: (selected === 1)? 'white': 'black'}} onClick = {handleClick.bind(this,0)} >None</Button>
           </Modal.Body>
           <Modal.Footer className = 'Footer'>
             <Button className = 'Cancel-button' variant="secondary" onClick = {handleClose} >

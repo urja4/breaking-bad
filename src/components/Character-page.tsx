@@ -29,7 +29,7 @@ const CharacterPage : React.FunctionComponent = () => {
             const quoteData = await apiCalls.getQuotesByAuthor(name);
             saveQuotes(quoteData);
         })();
-    }, []);
+    });
 
     let character: Character = {};
     if(characterData) {
@@ -74,7 +74,7 @@ const CharacterPage : React.FunctionComponent = () => {
                     </div>
                 </div>
                 <div className = 'Image'>
-                    <img src = {character.img} />
+                    <img src = {character.img} alt = "" />
                 </div>
             </div>
         )

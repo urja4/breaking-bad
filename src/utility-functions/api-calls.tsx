@@ -7,10 +7,10 @@ export async function getCharacterList(isFilterApplied: boolean, filterApplied: 
 
     if(isFilterApplied) {
         urlExtension += '?category=';
-        if(filterApplied == 1) {
+        if(filterApplied === 1) {
             urlExtension += 'Breaking+Bad';
         }
-        else if(filterApplied == 2) {
+        else if(filterApplied === 2) {
             urlExtension += 'Better+Call+Saul';
         }
     }
