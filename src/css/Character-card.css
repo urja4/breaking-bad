@@ -1,0 +1,25 @@
+.Character-list {
+    background-color: 'black';
+}
+
+.Character-name {
+    font-size: '40px';
+    color: 'black';
+}
+
+.Data {
+    border: '4px solid black';
+    display: 'flex';
+    align-content: 'left';
+}
+
+.Character-image {
+    height: '450px';
+    width: '312px';
+}
+
+.Character-data {
+    align-content: 'left';
+    display: 'flex';
+    font-size: 'larger';
+}

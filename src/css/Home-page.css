@@ -1,0 +1,16 @@
+.Home-page-header {
+    font-size: '150px';
+    background-color: '#d5cad6';
+    font-style: 'italic';
+    font-weight: 'bold';
+    font-family: 'initial';
+    box-shadow: 'inset 0px 0px 10px 5px currentColor';
+    text-shadow: '2px 1px brown';
+    color: '#6b5e62';
+}
+
+.Taskbar {
+    background-color: '#eafffd';
+    align-content: 'center';
+    justify-content: 'center';
+}

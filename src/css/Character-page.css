@@ -1,0 +1,48 @@
+.Character-page {
+    background-color: '#d5cad6';
+}
+
+.Character-data {
+    width: '1500px';
+}
+
+.Character-name {
+    font-size: '180px';
+    justify-content: 'center';
+    align-content: 'center';
+    color: 'black';
+}
+
+.Details {
+    justify-content: 'left';
+}
+
+.Data {
+    justify-content: 'left';
+    align-content: 'left';
+    font-size: '40px';
+    color: 'black';
+}
+
+.Image {
+    height: '1100px';
+    width: 'auto';
+    top: '30px';
+    right: '30px';
+    position: 'absolute';
+    border: '5px solid black';
+}
+
+.Quote-title {
+    font-size: '80px';
+    color: 'black';
+    justify-content: 'center';
+    align-content: 'center';
+}
+
+.Quotes {
+    font-size: '40px';
+    color: 'black';
+    justify-content: 'center';
+    align-content: 'center';
+}
